@@ -7,7 +7,7 @@ def computer_guess(x):
     low = 1
     high = x
     feedback = ''
-    while feedback != 'c':
+    while feedback != 'c': # 'c' para correcto y evitar bucle infinito
         guess = randint(low, high)
         feedback = input(f'Mi suposicion es {guess}. Si es muy bajo, escribe "b". Si es muy alto, escribe "a". Si es correcto, escribe "c": ').lower()
         if feedback == 'a':
