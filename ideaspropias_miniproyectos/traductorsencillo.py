@@ -5,7 +5,8 @@
 
 import asyncio
 from googletrans import Translator
-print("""\n Ya que el idioma es en japones te pongo un listado con los mas hablados y que te sea sencillo ponerlo:\n
+
+print("""\n Ya que el idioma es en ingles te pongo un listado con los mas hablados y que te sea sencillo ponerlo:\n
           * Español = es
           * Inglés = en
           * Chino mandarín = zh-cn
@@ -15,10 +16,12 @@ print("""\n Ya que el idioma es en japones te pongo un listado con los mas habla
           * Ruso = ru
           * Japonés = ja
           """)
+
 async def traducir():
 
     # Pedimos al usuario la frase y el idioma al que quiere traducir
     frase_traducir = input(f'*** Bienvenido al traductor ***\n\nIntroduce la frase que quieras traducir: ')
+    
     #El idioma puede ser cualquiera pero tiene que ser en formato codigo en ingles.
     idioma = input(f'Introduce el idioma al que quieras traducir "en = Ingles": ')
 
