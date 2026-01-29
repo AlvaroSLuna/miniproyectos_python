@@ -104,3 +104,36 @@ elif numero_dia == 7:
     print(f'El día {numero_dia} es el Domingo')
 else:
     print('Introduce un valor valido')
+
+
+# --------------------------------------------------------------------------------------------------------------------
+
+# Prueba 7 - Crear un programa que pida al usuario su altura en cm y determine si es apto para montar en una atracción de parque de diversiones (altura mínima 120 cm).
+print('*** Altura para Atracción ***')
+
+ALTURA_MINIMA = 120
+altura_usuario = (int(input('Introduce tu altura en centimetros para ver si puedes subir: ')))
+
+if altura_usuario >= ALTURA_MINIMA:
+    print(f'Enhorabuena tu altura es de {altura_usuario} cm por lo que puedes montar en la atracción.')
+elif altura_usuario < ALTURA_MINIMA:
+    print(f'Tu altura es de {altura_usuario} cm no cumples con la altura minima necesaria para subir a la atracción que es de {ALTURA_MINIMA} cm')
+else:
+    print('Introduce un valor correcto.')
+
+
+# --------------------------------------------------------------------------------------------------------------------
+
+# Prueba 8 - Crear un programa que pida al usuario un año y determine si es bisiesto o no.
+print('*** Año Bisiesto ***')
+anio_usuario = int(input('Introduce un año para ver si es bisiesto: '))
+
+if (anio_usuario % 4 == 0 and anio_usuario % 100 != 0) or (anio_usuario % 400 == 0):
+    print(f'El año {anio_usuario} es bisiesto.')
+elif anio_usuario % 4 != 0 or (anio_usuario % 100 == 0 and anio_usuario % 400 != 0):
+    print(f'El año {anio_usuario} no es bisiesto.')
+else:
+    print('Introduce un valor correcto.')
+
+
+# --------------------------------------------------------------------------------------------------------------------
