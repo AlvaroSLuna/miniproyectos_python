@@ -16,7 +16,6 @@ else:
 # --------------------------------------------------------------------------------------------------------------------
 
 # Ahora la siguiente prueba, quiero meter condicional if / elif / else y el uso de and / or / not cualquiera de ellos
-
 # Prueba 2 - Creamos un programa que pida al usuario su edad y si tiene carnet de conducir.
 # Con esa información, el programa debe determinar si la persona puede conducir legalmente.
 
@@ -48,6 +47,7 @@ else:
 
 
 # --------------------------------------------------------------------------------------------------------------------
+
 # Prueba 4 - Crear un programa que pida al usuario su calificación en un examen y determine si ha aprobado o no.
 
 print('*** Aprobado o No Aprobado ***')
@@ -72,9 +72,35 @@ else:
 pswd_real = 'Python123'
 pswd_usuario = ''
 
+# Bucle que sigue pidiendo la contraseña hasta que sea correcta
 while pswd_usuario != pswd_real:
     pswd_usuario = input('Introduce la contraseña: ')
     
     if pswd_usuario != pswd_real:
         print('Contraseña Incorrecta.')
 print('Contraseña Correcta.')
+
+
+# --------------------------------------------------------------------------------------------------------------------
+
+# Prueba 6 - Crear un programa que pida al usuario un número del 1 al 7 y devuelva el día de la semana correspondiente.
+
+print('*** Día de la Semana ***')
+numero_dia = int(input('Introduce un número del 1 al 7: '))
+
+if numero_dia == 1:
+    print(f'El día {numero_dia} es el Lunes')
+elif numero_dia == 2:
+    print(f'El día {numero_dia} es el Martes')
+elif numero_dia == 3:
+    print(f'El día {numero_dia} es el Miercoles')
+elif numero_dia == 4:
+    print(f'El día {numero_dia} es el Jueves')
+elif numero_dia == 5:
+    print(f'El día {numero_dia} es el Viernes')
+elif numero_dia == 6:
+    print(f'El día {numero_dia} es el Sábado')
+elif numero_dia == 7:
+    print(f'El día {numero_dia} es el Domingo')
+else:
+    print('Introduce un valor valido')
