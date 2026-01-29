@@ -63,3 +63,18 @@ elif calificacion_examen < 5:
     print(f'Mas suerte la próxima, con un {calificacion_examen:.2f} tienes un Suspenso')
 else:
     print('Introduce un valor correcto.')
+
+
+# --------------------------------------------------------------------------------------------------------------------
+
+# Prueba 5 - Creamos un programa que le pida una contraseña y la valide. El programa debe seguir pidiendola hasta que sea correcta
+
+pswd_real = 'Python123'
+pswd_usuario = ''
+
+while pswd_usuario != pswd_real:
+    pswd_usuario = input('Introduce la contraseña: ')
+    
+    if pswd_usuario != pswd_real:
+        print('Contraseña Incorrecta.')
+print('Contraseña Correcta.')
