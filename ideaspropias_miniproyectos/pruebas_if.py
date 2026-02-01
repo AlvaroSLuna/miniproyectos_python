@@ -151,8 +151,29 @@ elif num2 > num1 and num2 > num3:
     print(f'El numero mayor es: {num2}')
 elif num3 > num1 and num3 > num2:
     print(f'El numero mayor es: {num3}')
+elif (num1 == num2 and num1 == num3) or (num2 == num1 and num2 == num3) or (num3 == num2 and num3 == num1):
+    print(f'Los números introducidos son iguales. No se puede determinar cual es el mayor')
 else:
-    print('Al menos dos números deben ser distintos entre sí')
+    print('Introduce valores correctos.')
 
 
 # --------------------------------------------------------------------------------------------------------------------
+
+# Prueba 9 - Vamos a crear un programa para devolver el porcentaje de aforo de un estadio.
+# Le pedimos al usuario el aforo máximo, el aforo actual del partido y el nombre del estadio.
+
+print('*** Asistencia al Estadio ***')
+
+nombre_estadio = input('\nIntroduce el nombre del estadio: ')
+asis_max = int(input('Introduce la capacidad máxima del estadio: '))
+asis_act = int(input('Introduce la asistencia actual del estadio: '))
+portentaje = ((asis_act * 100) / asis_max)
+
+if asis_act == asis_max:
+    print(f'La asistencia al estadio {nombre_estadio} ha sido del {portentaje}%')
+elif asis_act < asis_max:
+    print(f'La capacidad del {nombre_estadio} es de {asis_max} pero con la asistencia actual de {asis_act} el porcentaje de asistencia es del {portentaje:.2f}%')
+elif asis_act > asis_max:
+    print('El aforo actual no puede superar al aforo máximo, vuelve a intentarlo.')
+else:
+    print('Introduce dígitos válidos.')
